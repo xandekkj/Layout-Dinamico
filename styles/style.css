@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    
+    /* Estilos gerais */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lexend Deca', sans-serif;
+      background-color: rgb(255, 255, 255);
+    }
+    
+    /* Layout */
+    .container {
+      display: flex;
+    }
+    
+    .menu {
+      width: 20%;
+      padding: 6em;
+      text-align: center;
+    }
+    
+    .menu img {
+      width: 70%;
+      height: 50%;
+      border: 3px;
+    }
+    
+    .menu h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 1.5em;
+    }
+
+    .menu ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .menu ul li a {
+      display: block;
+      padding: 5px;
+      border: 1px solid #A2B38B;
+      border-radius: 3px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .menu ul li a:hover {
+      background-color: #A2B38B;
+      color: white;
+    }
+
+    .content {
+      flex: 1;
+      padding: 6em;
+    }
+    
+    .content h2 {
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+    
+    .task-list {
+      display: flex;
+    }
+    
+    .task-list > div {
+      flex: 1;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+      padding: 5em;
+      border-radius: 15px;
+      color: #A2B38B;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .task-list h3 {
+      margin-top: 0;
+    }
+    
+    .task-list ol {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.3em;
+    }
+    
+    .add-task {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .add-task input[type="text"] {
+      flex: 1;
+      padding: 5px;
+    }
+    
+    .add-task select {
+      width: 100px;
+      padding: 5px;
+      margin-right: 5px;
+    }
+    
+    .add-task button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #A2B38B;
+      color: white;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .add-task button:hover {
+      background-color: #7D9E7D;
+    }

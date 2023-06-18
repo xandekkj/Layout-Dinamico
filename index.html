@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/088cb2029b.js" crossorigin="anonymous"></script>
+
+    <title>Layout Dinâmico</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <img src="./assets/icone.png" alt="Ícone">
+      <h3>Aceleradora Ágil</h3>
+      <p>Estudantes de tecnologia vivendo a experiência de desenvolver um software real enquanto aprendem a metodologia ágil.</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/school/aceleradora-ágil/?originalSubdomain=br" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/alexandre-firmino-ba8553239/" target="_blank">LinkedIn 2</a></li>
+        <li><a href="https://github.com/xandekkj" target="_blank">Github</a></li>
+        <li><a href="https://www.instagram.com/eo_xande_ok/" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h2>Lista de Tarefas</h2>
+      <div class="task-list">
+        <div id="dia-tasks">
+          <h3>Dia</h3>
+          <ol>
+            <li>Tarefa 1 (10:00)</li>
+            <li>Tarefa 2 (11:00)</li>
+            <li>Tarefa 3 (12:00)</li>
+          </ol>
+        </div>
+        <div id="noite-tasks">
+          <h3>Noite</h3>
+          <ol>
+            <li>Tarefa 1 (00:00)</li>
+            <li>Tarefa 2 (01:00)</li>
+            <li>Tarefa 3 (02:00)</li>
+          </ol>
+        </div>
+      </div>
+      <div class="add-task">
+        <input id="task-input" type="text" placeholder="Nova tarefa">
+        <select id="time-select">
+          <option value="dia">Dia</option>
+          <option value="noite">Noite</option>
+        </select>
+        <select id="hour-select">
+          <!-- Se necessário, adicionar mais horas -->
+          <option value="00:00">00:00</option>
+          <option value="01:00">01:00</option>
+          <option value="02:00">02:00</option>
+          <option value="03:00">03:00</option>
+          <option value="04:00">04:00</option>
+          <option value="05:00">05:00</option>
+          <option value="06:00">06:00</option>
+          <option value="07:00">07:00</option>
+          <option value="08:00">08:00</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+        </select>
+        <button id="add-task-button">Add</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
